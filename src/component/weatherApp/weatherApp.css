@@ -1,0 +1,11 @@
+.container {
+width: 610px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #280707;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 10px;
+  background-image: linear-gradient(315deg, #280707 0%, #280707 74%, #280707 100%);
+}
