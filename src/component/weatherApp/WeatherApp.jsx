@@ -21,6 +21,10 @@ const WeatherApp = () => (
     <div className='weather-icon'>
         <img src={cloud_icon} alt='cloud_icon' />
         </div>
+        <div className='weather-info'>
+            <div className='temperature'>25°C</div>
+            <div className='weather'>Cloudy</div>
+          </div>
   </div>
 );
 
