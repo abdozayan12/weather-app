@@ -39,3 +39,12 @@ width: 75%;
   color: #fff;
   cursor: pointer;
 }
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+}
