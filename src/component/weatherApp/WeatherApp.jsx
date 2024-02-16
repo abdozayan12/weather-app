@@ -21,7 +21,7 @@ const WeatherApp = () => (
     <div className="weather-icon">
       <img src={cloudIcon} alt="cloudIcon" />
     </div>
-    <div className="weather-info">
+    
       <div className="temperature">25°C</div>
       <div className="city">New York</div>
       <div className="data-container">
@@ -40,7 +40,7 @@ const WeatherApp = () => (
           </div>
         </div>
       </div>
-    </div>
+    
   </div>
 );
 

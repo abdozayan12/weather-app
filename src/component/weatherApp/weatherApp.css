@@ -40,11 +40,19 @@ width: 75%;
   cursor: pointer;
 }
 
-.weather-info {
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+
+.temperature {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 20px;
   color: #fff;
+  font-size: 120px;
+  font-weight: 400;
 }
