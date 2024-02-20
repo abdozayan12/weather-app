@@ -2,9 +2,11 @@
   width: 75%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
+  /* height: 100vh; */
   margin: auto;
-  margin-top: 75px;
+
+  /* margin-top: 75px; */
   border-radius: 10px;
   background-image: linear-gradient(315deg, #0b2c3f 0%, #071428 74%, #070928 100%);
 }
@@ -14,7 +16,7 @@
   justify-content: center;
   gap: 20px;
   align-items: center;
-  padding: 60px 20px 40px 20px;
+  padding: 40px 20px;
   border-bottom: 1px solid #fff;
 }
 
@@ -43,7 +45,6 @@
 .weather-icon {
   display: flex;
   justify-content: center;
-  margin-top: 29px;
 }
 
 .temperature {
