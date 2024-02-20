@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
 import './WeatherApp.css';
-
-import searchIcon from '../assets/search.png';
+import React, { useState } from 'react';
+import SearchBar from './SearchBar';
+import WeatherCard from './WeatherCard';
 import clearIcon from '../assets/clear.png';
 import cloudIcon from '../assets/cloud.png';
 import rainIcon from '../assets/rain.png';
 import snowIcon from '../assets/snow.png';
 import drizzleIcon from '../assets/drizzle.png';
-import humidityIcon from '../assets/humidity.png';
-import windIcon from '../assets/wind.png';
 
 const WeatherApp = () => {
   const apiKey = '5d1c474ea33a56bbc6a79adc3b6b3451';
@@ -54,46 +52,13 @@ const WeatherApp = () => {
   };
   return (
     <div className="container">
-      <div className="top-section">
-        <input type="text" placeholder="Search for places" className="CityInput" />
-        <div
-          className="search-icon"
-          role="button"
-          tabIndex={0}
-          onClick={() => { search(); }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              search();
-            }
-          }}
-        >
-          <img src={searchIcon} alt="searchIcon" />
-        </div>
-
-      </div>
+      <SearchBar onSearch={search} />
       <div className="weather-icon">
         <img src={wicon} alt="cloudIcon" />
       </div>
-
       <div className="temperature">25°C</div>
       <div className="city">New York</div>
-      <div className="data-container">
-        <div className="element">
-          <img src={humidityIcon} alt="" className="Icon" />
-          <div className="data">
-            <div className="humidity">64%</div>
-            <div className="text">Humidity</div>
-          </div>
-        </div>
-        <div className="element">
-          <img src={windIcon} alt="" className="Icon" />
-          <div className="data">
-            <div className="wind">18 km/h</div>
-            <div className="text">Wind speed</div>
-          </div>
-        </div>
-      </div>
-
+      <WeatherCard humidity="64" wind="18" />
     </div>
   );
 };
