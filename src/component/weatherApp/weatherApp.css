@@ -1,5 +1,5 @@
 .container {
-width: 75%;
+  width: 75%;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -69,7 +69,7 @@ width: 75%;
   justify-content: center;
 }
 
-.element{
+.element {
   margin: auto;
   display: flex;
   align-items: flex-start;
