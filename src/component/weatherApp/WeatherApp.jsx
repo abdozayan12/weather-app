@@ -13,7 +13,7 @@ import windIcon from '../assets/wind.png';
 const WeatherApp = () => {
   const apiKey = '5d1c474ea33a56bbc6a79adc3b6b3451';
 
-  const [setwicon] = useState(cloudIcon);
+  const [wicon, setwicon] = useState(cloudIcon);
   const search = async () => {
     const element = document.getElementsByClassName('CityInput');
     if (element[0].value === '') {
@@ -72,7 +72,7 @@ const WeatherApp = () => {
 
       </div>
       <div className="weather-icon">
-        <img src={cloudIcon} alt="cloudIcon" />
+        <img src={wicon} alt="cloudIcon" />
       </div>
 
       <div className="temperature">25°C</div>
