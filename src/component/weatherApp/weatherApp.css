@@ -1,5 +1,6 @@
 .container {
   width: 75%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -96,8 +97,14 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
-    padding: 20px;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url(../assets/OIP.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .top-section {
@@ -112,10 +119,12 @@
   .weather-icon img {
     width: 50%;
     height: auto;
+    margin-top: 20px;
   }
 
   .temperature {
     font-size: 80px;
+    margin-top: 15px;
   }
 
   .city {
