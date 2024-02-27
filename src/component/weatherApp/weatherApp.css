@@ -6,7 +6,6 @@
   margin: auto;
   border-radius: 10px;
   background-image: linear-gradient(45deg, black, transparent);
-  border: 1px red solid;
 }
 
 .top-section {
@@ -97,12 +96,10 @@
 @media screen and (max-width: 768px) {
   .container {
     width: 75%;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
     margin: auto;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, black, transparent);
-    border: 1px red solid;
+    background-image: linear-gradient(45deg, rgb(62, 1, 1), transparent);
   }
 
   .top-section {
