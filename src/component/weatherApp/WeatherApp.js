@@ -7,7 +7,7 @@ import rainIcon from '../assets/rain.png';
 import snowIcon from '../assets/snow.png';
 import drizzleIcon from '../assets/drizzle.png';
 import fetchWeatherData from './api';
-import './WeatherApp.css';
+import './weatherApp.css';
 
 const WeatherApp = () => {
   const [wicon, setwicon] = useState(cloudIcon);
