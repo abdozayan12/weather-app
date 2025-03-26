@@ -56,8 +56,8 @@ const WeatherApp = () => {
       <div className="weather-icon">
         <img src={wicon} alt="cloudIcon" />
       </div>
-      <div className="temperature">10°C</div>
-      <div className="city">New York</div>
+      <div className="temperature">25°C</div>
+      <div className="city">Cairo</div>
       <WeatherCard humidity="64" wind="18" />
     </div>
   );
